@@ -1,55 +1,9 @@
-import './App.css'
 import React from 'react'
-import Header from './layout/Header'
-import { Routes, Route } from "react-router-dom"
-import Footer from "./layout/Footer"
-import Home from './page/Home'
-import { useMediaQuery } from 'react-responsive'
+import ChatRoom from './components/ChatRoom'
 
 const App = () => {
-
-  const Desktop = ({ children }) => {
-    const isDesktop = useMediaQuery({ minWidth: 992 })
-    return isDesktop ? children : null
-  }
-  const Tablet = ({ children }) => {
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
-    return isTablet ? children : null
-  }
-  const Mobile = ({ children }) => {
-    const isMobile = useMediaQuery({ maxWidth: 767 })
-    return isMobile ? children : null
-  }
-  const Default = ({ children }) => {
-    const isNotMobile = useMediaQuery({ minWidth: 768 })
-    return isNotMobile ? children : null
-  }
-
   return (
-    <>
-      <Desktop>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-        <Footer />
-      </Desktop>
-      <Tablet>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-        <Footer />
-      </Tablet>
-      <Mobile>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-        <Footer />
-      </Mobile>
-      {/* <Default>Not mobile (desktop or laptop or tablet)</Default> */}
-    </>
+    <ChatRoom />
   )
 }
 
