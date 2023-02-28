@@ -16,6 +16,12 @@
     <properties>
         <java.version>18</java.version>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
+        <node.version>v16.18.1</node.version>
+        <npm.version>8.19.2</npm.version>
+>>>>>>> parent of 8d60aaef (Revert "update")
 =======
         <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
         <node.version>v16.18.1</node.version>
@@ -44,7 +50,10 @@
             <scope>test</scope>
         </dependency>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 8d60aaef (Revert "update")
 
         <dependency>
             <groupId>com.github.eirslett</groupId>
@@ -52,6 +61,9 @@
             <version>1.6</version>
         </dependency>
 
+<<<<<<< HEAD
+>>>>>>> parent of 8d60aaef (Revert "update")
+=======
 >>>>>>> parent of 8d60aaef (Revert "update")
     </dependencies>
 
@@ -78,7 +90,10 @@
                 </configuration>
             </plugin>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 8d60aaef (Revert "update")
 
             <plugin>
                 <groupId>com.github.eirslett</groupId>
@@ -132,6 +147,9 @@
                     </execution>
                 </executions>
             </plugin>
+<<<<<<< HEAD
+>>>>>>> parent of 8d60aaef (Revert "update")
+=======
 >>>>>>> parent of 8d60aaef (Revert "update")
         </plugins>
     </build>
