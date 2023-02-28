@@ -17,6 +17,12 @@
         <java.version>18</java.version>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
+        <node.version>v16.18.1</node.version>
+        <npm.version>8.19.2</npm.version>
+>>>>>>> parent of 8d60aaef (Revert "update")
 =======
         <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
         <node.version>v16.18.1</node.version>
@@ -51,7 +57,10 @@
         </dependency>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 8d60aaef (Revert "update")
 =======
 >>>>>>> parent of 8d60aaef (Revert "update")
 
@@ -62,6 +71,9 @@
         </dependency>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 8d60aaef (Revert "update")
+=======
 >>>>>>> parent of 8d60aaef (Revert "update")
 =======
 >>>>>>> parent of 8d60aaef (Revert "update")
@@ -91,7 +103,10 @@
             </plugin>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 8d60aaef (Revert "update")
 =======
 >>>>>>> parent of 8d60aaef (Revert "update")
 
@@ -148,6 +163,9 @@
                 </executions>
             </plugin>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 8d60aaef (Revert "update")
+=======
 >>>>>>> parent of 8d60aaef (Revert "update")
 =======
 >>>>>>> parent of 8d60aaef (Revert "update")
