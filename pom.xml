@@ -15,6 +15,12 @@
     <description>charserver</description>
     <properties>
         <java.version>18</java.version>
+<<<<<<< HEAD
+=======
+        <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
+        <node.version>v16.18.1</node.version>
+        <npm.version>8.19.2</npm.version>
+>>>>>>> parent of 8d60aaef (Revert "update")
     </properties>
     <dependencies>
         <dependency>
@@ -37,6 +43,16 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+<<<<<<< HEAD
+=======
+
+        <dependency>
+            <groupId>com.github.eirslett</groupId>
+            <artifactId>frontend-maven-plugin</artifactId>
+            <version>1.6</version>
+        </dependency>
+
+>>>>>>> parent of 8d60aaef (Revert "update")
     </dependencies>
 
     <build>
@@ -61,6 +77,62 @@
                     <target>17</target>
                 </configuration>
             </plugin>
+<<<<<<< HEAD
+=======
+
+            <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>${frontend-maven-plugin.version}</version>
+                <configuration>
+                    <workingDirectory>chatclient</workingDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>install node</id>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                        <configuration>
+                            <nodeVersion>${node.version}</nodeVersion>
+                            <npmVersion>${npm.version}</npmVersion>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm install</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                        <phase>generate-resources</phase>
+                    </execution>
+<!--                    <execution>-->
+<!--                        <id>npm test</id>-->
+<!--                        <goals>-->
+<!--                            <goal>npm start</goal>-->
+<!--                        </goals>-->
+<!--                        <phase>test</phase>-->
+<!--                        <configuration>-->
+<!--                            <arguments>test</arguments>-->
+<!--                            <environmentVariables>-->
+<!--                                <CI>true</CI>-->
+<!--                            </environmentVariables>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+                    <execution>
+                        <id>npm run build</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>run build</arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+>>>>>>> parent of 8d60aaef (Revert "update")
         </plugins>
     </build>
 
