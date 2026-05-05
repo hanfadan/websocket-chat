@@ -1,7 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import-normalize;
+@import 'normalize.css';
+@import 'tailwindcss';
 
 body {
   margin: 0;

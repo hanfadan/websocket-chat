@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { over } from 'stompjs'
+import { Stomp } from '@stomp/stompjs'
 import SockJS from 'sockjs-client'
 import { BiSend } from 'react-icons/bi'
 
@@ -24,7 +24,7 @@ const ChatRoom = () => {
 
     const connect = () => {
         let Sock = new SockJS('https://localhost:8080/ws');
-        stompClient = over(Sock);
+        stompClient = Stomp.over(Sock);
         stompClient.connect({}, onConnected, onError);
     }
 
